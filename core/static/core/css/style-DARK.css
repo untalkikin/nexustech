@@ -486,13 +486,13 @@ width: 59px;
 height: 35px;
 top: 55px;
 left: 55px;
-background: url(../img/logo-light.png) no-repeat;
+background: url(../img/roster.png) no-repeat;
 z-index: 98;
 }
 
 @media only screen and (max-width: 880px) {
   .logo {
-	background: url(../img/logo-light.png) no-repeat;
+	background: url(../img/roster.png) no-repeat;
   }
 }
 
