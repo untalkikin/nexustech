@@ -323,6 +323,7 @@
                         <div class="col-md-12 col-sm-12">
                             <!-- carousel start -->
                             <div class="owl-carousel" id="owl-carousel-team">
+                                {% for uspicture in uspictures reversed %}
                                 <!-- section item start -->
                                 <div class="post-box">
                                     <!-- team item start -->
@@ -330,7 +331,7 @@
                                         <div class="team-item-inner">
                                             <div class="team-box">
                                                 <div class="image-works">
-                                                    <img alt="Img" src="{% static 'core/img/team/1.jpg'%}">                                                
+                                                    <img alt="Img" src="{{uspicture.image.url}}">                                                
                                                 </div>
                                             </div>
                                         </div>
@@ -345,13 +346,8 @@
                                         <div class="divider-m"></div>
                                         <!-- divider end -->
                                         <!-- section title start -->
-                                        <div class="section-title-inner">
-                                            C. Eastwood
-                                        </div>
-                                        <!-- section title end -->
-                                        <!-- section title start -->
                                         <div class="section-title-inner section-title-inner-dark">
-                                            Chief Photographer
+                                            {{uspicture.title}}
                                         </div>
                                         <!-- section title end -->
                                         <!-- divider start -->
@@ -362,13 +358,13 @@
                                             <!-- social icons start -->
                                             <ul>
                                                 <li>
-                                                    <a class="ion-social-twitter" href="#"><span>Twitter</span></a>                                                
+                                                    <a class="ion-social-twitter" href={{uspicture.linkX}}><span>Twitter</span></a>                                                
                                                 </li>
                                                 <li>
-                                                    <a class="ion-social-facebook" href="#"><span>Facebook</span></a>                                                
+                                                    <a class="ion-social-facebook" href={{uspicture.linkFb}}><span>Facebook</span></a>                                                
                                                 </li>
                                                 <li>
-                                                    <a class="ion-social-instagram" href="#"><span>Instagram</span></a>                                                
+                                                    <a class="ion-social-instagram" href={{uspicture.linkIg}}><span>Instagram</span></a>                                                
                                                 </li>
                                             </ul>
                                             <!-- social icons end -->
@@ -377,223 +373,7 @@
                                     </div>
                                 </div>
                                 <!-- section item end -->
-                                <!-- section item start -->
-                                <div class="post-box">
-                                    <!-- team item start -->
-                                    <div class="team-item">
-                                        <div class="team-item-inner">
-                                            <div class="team-box">
-                                                <div class="image-works">
-                                                    <img alt="Img" src="{% static 'core/img/team/2.jpg'%}">                                                
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- divider start -->
-                                        <div class="team-item-divider">
-                                        </div>
-                                        <!-- divider end -->
-                                    </div>
-                                    <!-- team item end -->
-                                    <div class="post-box-inner">
-                                        <!-- divider start -->
-                                        <div class="divider-m"></div>
-                                        <!-- divider end -->
-                                        <!-- section title start -->
-                                        <div class="section-title-inner">
-                                            W. Kar-wai
-                                        </div>
-                                        <!-- section title end -->
-                                        <!-- section title start -->
-                                        <div class="section-title-inner section-title-inner-dark">
-                                            Editorial Photographer
-                                        </div>
-                                        <!-- section title end -->
-                                        <!-- divider start -->
-                                        <div class="divider-m"></div>
-                                        <!-- divider end -->
-                                        <!-- section txt start -->
-                                        <div class="social-icons social-icons-dark">
-                                            <!-- social icons start -->
-                                            <ul>
-                                                <li>
-                                                    <a class="ion-social-twitter" href="#"><span>Twitter</span></a>                                                
-                                                </li>
-                                                <li>
-                                                    <a class="ion-social-facebook" href="#"><span>Facebook</span></a>                                                
-                                                </li>
-                                                <li>
-                                                    <a class="ion-social-instagram" href="#"><span>Instagram</span></a>                                                
-                                                </li>
-                                            </ul>
-                                            <!-- social icons end -->
-                                        </div>
-                                        <!-- section txt end -->
-                                    </div>
-                                </div>
-                                <!-- section item end -->
-                                <!-- section item start -->
-                                <div class="post-box">
-                                    <!-- team item start -->
-                                    <div class="team-item">
-                                        <div class="team-item-inner">
-                                            <div class="team-box">
-                                                <div class="image-works">
-                                                    <img alt="Img" src="{% static 'core/img/team/3.jpg'%}">                                                
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- divider start -->
-                                        <div class="team-item-divider">
-                                        </div>
-                                        <!-- divider end -->
-                                    </div>
-                                    <!-- team item end -->
-                                    <div class="post-box-inner">
-                                        <!-- divider start -->
-                                        <div class="divider-m"></div>
-                                        <!-- divider end -->
-                                        <!-- section title start -->
-                                        <div class="section-title-inner">
-                                            R. Redford
-                                        </div>
-                                        <!-- section title end -->
-                                        <!-- section title start -->
-                                        <div class="section-title-inner section-title-inner-dark">
-                                            Advertising Photographer
-                                        </div>
-                                        <!-- section title end -->
-                                        <!-- divider start -->
-                                        <div class="divider-m"></div>
-                                        <!-- divider end -->
-                                        <!-- section txt start -->
-                                        <div class="social-icons social-icons-dark">
-                                            <!-- social icons start -->
-                                            <ul>
-                                                <li>
-                                                    <a class="ion-social-twitter" href="#"><span>Twitter</span></a>                                                
-                                                </li>
-                                                <li>
-                                                    <a class="ion-social-facebook" href="#"><span>Facebook</span></a>                                                
-                                                </li>
-                                                <li>
-                                                    <a class="ion-social-instagram" href="#"><span>Instagram</span></a>                                                
-                                                </li>
-                                            </ul>
-                                            <!-- social icons end -->
-                                        </div>
-                                        <!-- section txt end -->
-                                    </div>
-                                </div>
-                                <!-- section item end -->
-                                <!-- section item start -->
-                                <div class="post-box">
-                                    <!-- team item start -->
-                                    <div class="team-item">
-                                        <div class="team-item-inner">
-                                            <div class="team-box">
-                                                <div class="image-works">
-                                                    <img alt="Img" src="{% static 'core/img/team/4.jpg'%}">                                                
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- divider start -->
-                                        <div class="team-item-divider">
-                                        </div>
-                                        <!-- divider end -->
-                                    </div>
-                                    <!-- team item end -->
-                                    <div class="post-box-inner">
-                                        <!-- divider start -->
-                                        <div class="divider-m"></div>
-                                        <!-- divider end -->
-                                        <!-- section title start -->
-                                        <div class="section-title-inner">
-                                            T. Scott
-                                        </div>
-                                        <!-- section title end -->
-                                        <!-- section title start -->
-                                        <div class="section-title-inner section-title-inner-dark">
-                                            Executive Photographer
-                                        </div>
-                                        <!-- section title end -->
-                                        <!-- divider start -->
-                                        <div class="divider-m"></div>
-                                        <!-- divider end -->
-                                        <!-- section txt start -->
-                                        <div class="social-icons social-icons-dark">
-                                            <!-- social icons start -->
-                                            <ul>
-                                                <li>
-                                                    <a class="ion-social-twitter" href="#"><span>Twitter</span></a>                                                
-                                                </li>
-                                                <li>
-                                                    <a class="ion-social-facebook" href="#"><span>Facebook</span></a>                                                
-                                                </li>
-                                                <li>
-                                                    <a class="ion-social-instagram" href="#"><span>Instagram</span></a>                                                
-                                                </li>
-                                            </ul>
-                                            <!-- social icons end -->
-                                        </div>
-                                        <!-- section txt end -->
-                                    </div>
-                                </div>
-                                <!-- section item end -->
-                                <!-- section item start -->
-                                <div class="post-box">
-                                    <!-- team item start -->
-                                    <div class="team-item">
-                                        <div class="team-item-inner">
-                                            <div class="team-box">
-                                                <div class="image-works">
-                                                    <img alt="Img" src="{% static 'core/img/team/5.jpg'%}">                                                
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- divider start -->
-                                        <div class="team-item-divider">
-                                        </div>
-                                        <!-- divider end -->
-                                    </div>
-                                    <!-- team item end -->
-                                    <div class="post-box-inner">
-                                        <!-- divider start -->
-                                        <div class="divider-m"></div>
-                                        <!-- divider end -->
-                                        <!-- section title start -->
-                                        <div class="section-title-inner">
-                                            C. Nolan
-                                        </div>
-                                        <!-- section title end -->
-                                        <!-- section title start -->
-                                        <div class="section-title-inner section-title-inner-dark">
-                                            Photography Consultant
-                                        </div>
-                                        <!-- section title end -->
-                                        <!-- divider start -->
-                                        <div class="divider-m"></div>
-                                        <!-- divider end -->
-                                        <!-- section txt start -->
-                                        <div class="social-icons social-icons-dark">
-                                            <!-- social icons start -->
-                                            <ul>
-                                                <li>
-                                                    <a class="ion-social-twitter" href="#"><span>Twitter</span></a>                                                
-                                                </li>
-                                                <li>
-                                                    <a class="ion-social-facebook" href="#"><span>Facebook</span></a>                                                
-                                                </li>
-                                                <li>
-                                                    <a class="ion-social-instagram" href="#"><span>Instagram</span></a>                                                
-                                                </li>
-                                            </ul>
-                                            <!-- social icons end -->
-                                        </div>
-                                        <!-- section txt end -->
-                                    </div>
-                                </div>
-                                <!-- section item end -->
+                                {% endfor %}
                             </div>
                             <!-- carousel end -->
                             <!-- divider start -->
@@ -616,9 +396,10 @@
                             <ul class="timeline">
                                 <!-- timeline step 1 start -->
                                 <li>
+                                    {% for partner in partners reversed %}
                                     <!-- timeline IMG start -->
                                     <div class="timeline-image">
-                                        <img alt="Timeline" class="img-circle img-responsive" src="{% static 'core/img/timeline/1.jpg'%}">
+                                        <img alt="Timeline" class="img-circle img-responsive" src="{{partner.profilepicture.url}}">
                                     </div>
                                     <!-- timeline IMG end -->
                                     <!-- timeline panel start -->
@@ -627,7 +408,7 @@
                                         <div class="timeline-heading">
                                             <!-- date start -->
                                             <h4 class="cd-timeline-date">
-                                                April 2019 - Present
+                                                {{partner.since}} - Present
                                             </h4>
                                             <!-- date end -->
                                             <!-- divider start -->
@@ -635,8 +416,7 @@
                                             <!-- divider end -->
                                             <!-- position start -->
                                             <h3 class="cd-timeline-name">
-                                                Chief<br>
-                                                Photographer
+                                                {{partner.position}}
                                             </h3>
                                             <!-- position end -->
                                             <!-- divider start -->
@@ -644,7 +424,7 @@
                                             <!-- divider end -->
                                             <!-- position time start -->
                                             <h3 class="cd-timeline-name">
-                                                <span class="cd-timeline-position">Full-time</span>
+                                                <span class="cd-timeline-position">{{partner.contract}}</span>
                                             </h3>
                                             <!-- position time end -->
                                             <!-- divider start -->
@@ -655,115 +435,16 @@
                                         <!-- section TXT start -->
                                         <div class="timeline-body">
                                             <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s.
+                                                {{partner.description}}
                                             </p>
                                         </div>
                                         <!-- section TXT end -->
                                     </div>
                                     <!-- timeline panel end -->
+                                    {% endfor %}
                                 </li>
                                 <!-- timeline step 1 end -->
-                                <!-- timeline step 2 start -->
-                                <li class="timeline-inverted">
-                                    <!-- timeline IMG start -->
-                                    <div class="timeline-image">
-                                        <img alt="Timeline" class="img-circle img-responsive" src="{% static 'core/img/timeline/2.jpg'%}">
-                                    </div>
-                                    <!-- timeline IMG end -->
-                                    <!-- timeline panel start -->
-                                    <div class="timeline-panel">
-                                        <!-- timeline heading start -->
-                                        <div class="timeline-heading">
-                                            <!-- date start -->
-                                            <h4 class="cd-timeline-date">
-                                                May 2012 - April 2019
-                                            </h4>
-                                            <!-- date end -->
-                                            <!-- divider start -->
-                                            <div class="divider-s"></div>
-                                            <!-- divider end -->
-                                            <!-- position start -->
-                                            <h3 class="cd-timeline-name">
-                                                Assistant<br>
-                                                Photographer
-                                            </h3>
-                                            <!-- position end -->
-                                            <!-- divider start -->
-                                            <div class="divider-s"></div>
-                                            <!-- divider end -->
-                                            <!-- position time start -->
-                                            <h3 class="cd-timeline-name">
-                                                <span class="cd-timeline-position">Freelance</span>
-                                            </h3>
-                                            <!-- position time end -->
-                                            <!-- divider start -->
-                                            <div class="divider-m"></div>
-                                            <!-- divider end -->
-                                        </div>
-                                        <!-- timeline heading end -->
-                                        <!-- section TXT start -->
-                                        <div class="timeline-body">
-                                            <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s.
-                                            </p>
-                                        </div>
-                                        <!-- section TXT end -->
-                                    </div>
-                                    <!-- timeline panel end -->
-                                </li>
-                                <!-- timeline step 2 end -->
-                                <!-- timeline step 3 start -->
-                                <li>
-                                    <!-- timeline IMG start -->
-                                    <div class="timeline-image">
-                                        <img alt="Timeline" class="img-circle img-responsive" src="{% static 'core/img/timeline/3.jpg'%}">
-                                    </div>
-                                    <!-- timeline IMG end -->
-                                    <!-- timeline panel start -->
-                                    <div class="timeline-panel timeline-panel-last">
-                                        <!-- timeline heading start -->
-                                        <div class="timeline-heading">
-                                            <!-- date start -->
-                                            <h4 class="cd-timeline-date">
-                                                January 2008 - May 2012
-                                            </h4>
-                                            <!-- date end -->
-                                            <!-- divider start -->
-                                            <div class="divider-s"></div>
-                                            <!-- divider end -->
-                                            <!-- position start -->
-                                            <h3 class="cd-timeline-name">
-                                                Fashion<br>
-                                                Photographer
-                                            </h3>
-                                            <!-- position end -->
-                                            <!-- divider start -->
-                                            <div class="divider-s"></div>
-                                            <!-- divider end -->
-                                            <!-- position time start -->
-                                            <h3 class="cd-timeline-name">
-                                                <span class="cd-timeline-position">Part-time</span>
-                                            </h3>
-                                            <!-- position time end -->
-                                            <!-- divider start -->
-                                            <div class="divider-m"></div>
-                                            <!-- divider end -->
-                                        </div>
-                                        <!-- timeline heading end -->
-                                        <!-- section TXT start -->
-                                        <div class="timeline-body">
-                                            <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s.
-                                            </p>
-                                        </div>
-                                        <!-- section TXT end -->
-                                    </div>
-                                    <!-- timeline panel end -->
-                                </li>
-                                <!-- timeline step 3 end -->
+                               
                             </ul>
                             <!-- timeline steps end -->
                         </div>
