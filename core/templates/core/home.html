@@ -395,8 +395,8 @@
                             <!-- timeline steps start -->
                             <ul class="timeline">
                                 <!-- timeline step 1 start -->
+                                {% for partner in partners reversed %}
                                 <li>
-                                    {% for partner in partners reversed %}
                                     <!-- timeline IMG start -->
                                     <div class="timeline-image">
                                         <img alt="Timeline" class="img-circle img-responsive" src="{{partner.profilepicture.url}}">
@@ -441,8 +441,8 @@
                                         <!-- section TXT end -->
                                     </div>
                                     <!-- timeline panel end -->
-                                    {% endfor %}
                                 </li>
+                                {% endfor %}
                                 <!-- timeline step 1 end -->
                                
                             </ul>
